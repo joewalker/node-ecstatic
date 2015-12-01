@@ -77,7 +77,8 @@ var opts = {
              serverHeader       : true,
              contentType        : 'application/octet-stream',
              mimeTypes          : undefined,
-             handleOptionsMethod: false
+             handleOptionsMethod: false,
+             fs                 : undefined
            }
 ```
 
@@ -193,7 +194,18 @@ This is a **convenience** setting which turns on `handleOptionsMethod` and sets 
 
 Defaults to **false**.
 
-## middleware(req, res, next);
+### `opts.fs`
+
+A custom implementation of the node fs object, allowing for things like network
+or other non-traditional-filesystem implementations, or filtering based on the
+real filesystem.
+
+Currently the only methods called on 'fs' are:
+
+* fs.stat
+* fs.createReadStream
+
+### middleware(req, res, next);
 
 This works more or less as you'd expect.
 

@@ -13,5 +13,6 @@
   "contentType": "application/octet-stream",
   "weakEtags": false,
   "weakCompare": false,
-  "handleOptionsMethod": false
+  "handleOptionsMethod": false,
+  "fs": null
 }

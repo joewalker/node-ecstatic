@@ -30,5 +30,6 @@
     "handleOptionsMethod",
     "handleoptionsmethod",
     "handle-options-method"
-  ]
+  ],
+  "fs": [ "fs" ]
 }
